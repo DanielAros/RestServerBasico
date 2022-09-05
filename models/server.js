@@ -33,11 +33,9 @@ class Server {
         //Directorio Publico
         this.app.use( express.static('public'));
     
-        
     }
 
     routes(){
-        
         this.app.use( this.usuariosPath , require('../routes/usuarios'));
     }
 
